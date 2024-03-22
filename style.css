@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 70vmin;
+    width: 65vmin;
+    background-color: #293447;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+
+}
+.game-detail{
+    display: flex;
+    justify-content: space-between;
+    color: #BBC6DC;
+    padding: 20px 27px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.board{
+    height: 100%;
+    width: 100%;
+    background-color: #212837;
+    display: grid;
+    grid-template-rows: repeat(30,1fr);
+    grid-template-columns: repeat(30,1fr);
+    
+}
+.head{
+    background-color:#60cbff;
+    
+    
+}
+.food{
+    background-color: #ff003d;
+   
+}
