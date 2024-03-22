@@ -1,5 +1,5 @@
 let board = document.querySelector(".board");
-let food = { x: 5, y: 6 };
+let food = { x:7 , y: 6 };
 let score = 0;
 let highScore = 0;
 let scoreboard = document.querySelector(".game-detail");
@@ -59,8 +59,10 @@ const gameEngine = () => {
   //food eaten by the snake
   if (snakeArr[0].x === food.x && snakeArr[0].y === food.y) {
     snakeArr.unshift(snakeArr[0]);
-    food.x = Math.floor(Math.random() * 30 );
-    food.y = Math.floor(Math.random() * 30 + 1);
+      let a=2;
+      let b= 29;
+    food.x =Math.round(a+(b-a)*Math.random());
+    food.y = Math.round(a+(b-a)*Math.random());
     score++;
   }
 
